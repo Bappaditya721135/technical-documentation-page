@@ -22,7 +22,7 @@ a{
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
     background-color: lightblue;
 }
 #nav-bar>header{
@@ -50,11 +50,30 @@ a{
 
 }
 #main>.section>article{
-    margin: 15px;
+    margin: 17px;
 }
 #main>.section>article>ul{
-    padding-left: 40px;
+    padding-left: 80px;
 }
-/* #main>.section>article>ul>li{
+code{
     display: block;
-} */
+    margin: 10px;
+    padding: 15px;
+    white-space: pre-line;
+    background-color: hsl(0, 0%, 94%);
+}
+@media(max-width: 1050px){
+    #nav-bar{
+        position: static;
+        width: 100%;
+    }
+    .container{
+        flex-direction: column;
+    }
+    #main{
+        margin-left: 10px;
+    }
+    #nav-bar>#nav-ul{
+        height: 200px;
+    }
+}
